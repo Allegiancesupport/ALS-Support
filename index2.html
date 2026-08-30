@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allegiance | Lawyers & Solicitors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #001f3f;
+            --slate-blue: #7a8ba8;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .serif { font-family: 'Playfair Display', serif; }
+        .text-navy { color: var(--navy); }
+        .bg-navy { background-color: var(--navy); }
+        .border-navy { border-color: var(--navy); }
+        .hero-gradient { 
+            background: linear-gradient(rgba(0,31,63,0.85), rgba(0,31,63,0.85)), 
+            url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        /* Ensures portrait visibility without cropping */
+        .portrait-fit {
+            width: 100%;
+            height: 420px; 
+            object-fit: cover;
+            object-position: top;
+            background-color: #f8fafc; 
+            border-bottom: 1px solid #edf2f7;
+        }
+        /* Professional justified text alignment */
+        .justify-content { text-align: justify; text-justify: inter-word; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm py-4 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="flex items-center space-x-4">
+                    <img src="logo.jpg" alt="Allegiance Logo" class="h-14 w-auto object-contain">
+                    
+                    <div class="h-10 w-px bg-gray-200 hidden sm:block"></div>
+
+                    <div class="flex flex-col items-start">
+                        <span class="text-2xl sm:text-3xl font-bold tracking-[0.2em] text-navy uppercase leading-none">Allegiance</span>
+                        <span class="text-lg text-gray-500 serif mt-1">
+                            Lawyers <span class="italic">&</span> Solicitors
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-10 text-xs font-semibold uppercase tracking-widest text-gray-600">
+                <a href="#firm" class="hover:text-navy transition">The Firm</a>
+                <a href="#partners" class="hover:text-navy transition">Partners</a>
+                <a href="#team" class="hover:text-navy transition">Our Team</a>
+                <a href="#contact" class="hover:text-navy transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header class="hero-gradient h-[65vh] flex items-center text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl mb-6">Integrity. Excellence. <br>Result-Oriented Advocacy.</h2>
+            <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+            <p class="text-xl font-light italic opacity-90">Strategic Legal Counsel at the Supreme Court of India</p>
+        </div>
+    </header>
+
+    <!-- Firm Profile -->
+    <section id="firm" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl text-navy mb-10 serif uppercase tracking-widest">Firm Profile</h3>
+            <p class="text-lg text-gray-600 leading-loose justify-content">
+                Allegiance Lawyers & Solicitors is defined by discipline, diligence, and an unwavering dedication to the highest standards of the legal profession. We bridge the gap between traditional courtroom discipline and contemporary legal insight, offering strategic solutions that uphold the integrity of the law.
+            </p>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h3 class="text-3xl text-navy mb-16 text-center uppercase tracking-widest serif">Our Partners</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center">
+                
+                <!-- Partner 1: Abhaid Parikh -->
+                <div class="bg-white shadow-sm border-t-4 border-navy flex flex-col h-full max-w-md mx-auto w-full">
+                    <img src="abhaid.jpg" alt="Abhaid Parikh" class="portrait-fit grayscale hover:grayscale-0 transition duration-500">
+                    <div class="p-8 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h4 class="text-2xl text-navy mb-2 uppercase serif">
+                                <a href="abhaid-profile.html" class="hover:text-blue-700 transition">Abhaid Parikh</a>
+                            </h4>
+                            <p class="text-xs font-bold text-blue-900 uppercase tracking-tighter mb-4">Advocate-on-Record, Supreme Court of India</p>
+                            <p class="text-sm text-gray-600 leading-relaxed mb-4 justify-content">Recognised for his precise advocacy and over 10 years of practice spanning High Courts and Tribunals.</p>
+                            <ul class="text-xs text-gray-500 space-y-2 italic mb-6">
+                                <li>• Constitutional & Criminal Law</li>
+                                <li>• Special Counsel (NCPCR)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="abhaid-profile.html" class="text-[10px] font-bold uppercase tracking-widest text-navy border-b border-navy pb-1 hover:text-blue-700 hover:border-blue-700 transition">View Full Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partner 2: Kartik Rathi -->
+                <div class="bg-white shadow-sm border-t-4 border-navy flex flex-col h-full max-w-md mx-auto w-full">
+                    <img src="kartik.jpg" alt="Kartik Rathi" class="portrait-fit grayscale hover:grayscale-0 transition duration-500">
+                    <div class="p-8 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h4 class="text-2xl text-navy mb-2 uppercase serif">
+                                <a href="kartik-profile.html" class="hover:text-blue-700 transition">Kartik Rathi</a>
+                            </h4>
+                            <p class="text-xs font-bold text-blue-900 uppercase tracking-tighter mb-4">Advocate, Supreme Court of India</p>
+                            <p class="text-sm text-gray-600 leading-relaxed mb-4 justify-content">A well-rounded litigator recognized for his strategic acumen in finance-related and commercial matters.</p>
+                            <ul class="text-xs text-gray-500 space-y-2 italic mb-6">
+                                <li>• Commercial Litigation</li>
+                                <li>• Strategic Client Advisory</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="kartik-profile.html" class="text-[10px] font-bold uppercase tracking-widest text-navy border-b border-navy pb-1 hover:text-blue-700 hover:border-blue-700 transition">View Full Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-10 text-center">
+        <p class="text-[10px] text-gray-400 uppercase tracking-[0.5em]">&copy; 2026 Allegiance Lawyers & Solicitors</p>
+    </footer>
+
+</body>
+</html>
